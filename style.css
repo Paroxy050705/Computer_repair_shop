@@ -1,0 +1,491 @@
+/* Reset some default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  .banner {
+    background: url('https://images.unsplash.com/photo-1581090700227-1e8eecf94d3d') center/cover no-repeat;
+    color: rgb(17, 4, 4);
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #00bcd4;
+  }
+  
+  .banner .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #030836;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .services, .about, .contact {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .services h2, .about h2, .contact h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service {
+    background: #e0f7fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  form button {
+    padding: 0.75rem;
+    background: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #004d40;
+  }
+  
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+   */
+
+
+   /* === Color Variables ===
+/* :root {
+    --primary-color: #00796b;
+    --secondary-color: #00bcd4;
+    --accent-color: #e0f7fa;
+    --dark-bg: #1c1c1c;
+    --light-bg: #ffffff;
+    --text-color: #333;
+    --footer-bg: #121212;
+    --header-color: #f5f5f5;
+    --error-color: #e53935;
+    --success-color: #43a047;
+  }
+  
+  /* === Reset and Body === */
+  /*
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* === Header === */
+  /* header {
+    background: var(--dark-bg);
+    color: var(--header-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: var(--header-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* === Banner === */
+ /* .banner {
+    background: url('https://images.unsplash.com/photo-1581090700227-1e8eecf94d3d') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+  }
+  
+  .banner .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .banner .btn:hover {
+    background: var(--primary-color);
+  }
+  
+  /* === Services, About, Contact Sections === */
+ /* .services, .about, .contact {
+    padding: 4rem 2rem;
+    background-color: var(--light-bg);
+    margin-top: 2rem;
+  }
+  
+  .services h2, .about h2, .contact h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service {
+    background: var(--accent-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* === Form Styling === */
+ /* form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  form button {
+    padding: 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* === Footer === */
+  /*footer {
+    background: var(--footer-bg);
+    color: #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  } */
+
+
+
+
+  /* === Color Variables === */
+:root {
+    --primary-color: #00796b;
+    --secondary-color: #00bcd4;
+    --accent-color: #e0f7fa;
+    --dark-bg: #1c1c1c;
+    --light-bg: #ffffff;
+    --text-color: #333;
+    --footer-bg: #121212;
+    --header-color: #f5f5f5;
+    --error-color: #e53935;
+    --success-color: #43a047;
+  }
+  
+  /* === Reset and Body === */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* === Header === */
+  header {
+    background: var(--dark-bg);
+    color: var(--header-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: var(--header-color);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* === Banner === */
+  .banner {
+    background: url('https://images.unsplash.com/photo-1581090700227-1e8eecf94d3d') center/cover no-repeat;
+    color: #080101;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #056d80;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+  }
+  
+  .banner .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+    background-color: #060135;
+  }
+  
+  .banner .btn:hover {
+    background: var(--primary-color);
+  }
+  
+  /* === Services Section === */
+  .services {
+    padding: 4rem 2rem;
+    background-color: var(--accent-color); /* Light teal background */
+    margin-top: 2rem;
+  }
+  
+  .services h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* === About Section === */
+  .about {
+    padding: 4rem 2rem;
+    background-color: var(--primary-color); /* Teal background */
+    color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .about h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .about p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  /* === Contact Section === */
+  .contact {
+    padding: 4rem 2rem;
+    background-color: var(--secondary-color); /* Light blue background */
+    margin-top: 2rem;
+  }
+  
+  .contact h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input, form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  form button {
+    padding: 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* === Footer === */
+  footer {
+    background: var(--footer-bg);
+    color: #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
